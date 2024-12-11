@@ -1,0 +1,26 @@
+@use "../variables/design.scss";
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 768px) {
+    gap: 19px;
+  }
+
+  &__collapses {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    overflow: hidden;
+    width: 100%;
+    padding: 0 108px;
+
+    @media (max-width: 768px) {
+      padding: 0;
+      gap: 20px;
+    }
+  }
+}

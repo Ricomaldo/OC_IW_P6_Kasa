@@ -1,0 +1,30 @@
+@use "../variables/design.scss";
+
+.header {
+  font-size: 24px;
+
+  img {
+    max-height: 68px;
+    max-width: 210px;
+    @media (max-width: 768px) {
+      height: 45px;
+      width: 145px;
+    }
+  }
+  nav {
+    display: flex;
+    gap: 57px;
+    @media (max-width: 768px) {
+      text-transform: uppercase;
+      gap: 26px;
+      font-size: 12px;
+    }
+    a {
+      text-decoration: none;
+      color: design.$black;
+      &.active {
+        text-decoration: underline;
+      }
+    }
+  }
+}

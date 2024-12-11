@@ -1,0 +1,53 @@
+@use "../variables/design.scss";
+@use "../animations/Collapse.scss";
+
+.collapse {
+  width: 100%;
+
+  overflow: hidden;
+  .collapse-title {
+    background-color: design.$primary-color;
+    color: design.$white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    border-radius: 5px;
+    padding: 10px 15px;
+    overflow: hidden;
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    @media (max-width: 1024px) {
+      padding: 10px 10px 10px 20px;
+      h3 {
+        font-size: 18px;
+      }
+    }
+    @media (max-width: 768px) {
+      padding: 10px 10px 10px 6px;
+      h3 {
+        font-size: 13px;
+      }
+    }
+
+    i {
+      cursor: pointer;
+      font-size: 32px;
+      @media (max-width: 768px) {
+        font-size: 10px;
+      }
+    }
+  }
+  .collapse-content {
+    color: design.$black;
+    background-color: design.$bg-color-2;
+    padding: 30px 24px 0 20px;
+    font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use "../variables/design.scss";
+
+.footer {
+  color: design.$white;
+  font-size: 24px;
+
+  img {
+    max-height: 39px;
+    max-width: 122px;
+
+    @media (max-width: 768px) {
+      height: 45px;
+      width: 145px;
+    }
+  }
+  p {
+    font-size: 24px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+      width: 134px;
+      text-align: center;
+    }
+  }
+}

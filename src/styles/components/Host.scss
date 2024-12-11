@@ -1,0 +1,33 @@
+@use "../variables/design.scss";
+
+.host {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+
+  @media (max-width: 768px) {
+    gap: 11px;
+  }
+
+  &__name {
+    width: 93px;
+    text-align: right;
+    font-size: 18px;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
+  }
+
+  &__picture {
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+    @media (max-width: 768px) {
+      border-radius: 50%;
+      height: 33px;
+      width: 33px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use "./variables/design.scss";
+@use "reset.scss";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  overflow-y: scroll; /* Force toujours la barre verticale */
+}
+
+#root {
+  color: design.$primary-color;
+  background-color: design.$bg-color-1;
+  font-family: design.$font-family-1;
+  line-height: 1.426;
+  min-width: 375px;
+}
+
+a {
+  text-decoration: none;
+}

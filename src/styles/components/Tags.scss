@@ -1,0 +1,28 @@
+@use "../variables/design.scss";
+
+.tags {
+  display: flex;
+  flex-direction: row;
+
+  gap: 10px;
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: design.$primary-color;
+    color: design.$white;
+    font-weight: 700;
+    height: 25px;
+    min-width: 115px;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 0 25px;
+    @media (max-width: 768px) {
+      height: 18px;
+      min-width: 84px;
+      padding: 0 12px;
+      border-radius: 5px;
+      font-size: 10px;
+    }
+  }
+}

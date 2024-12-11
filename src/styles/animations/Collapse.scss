@@ -1,0 +1,13 @@
+@use "../variables/design.scss";
+
+.collapse {
+  .collapse-title {
+    i {
+      transition: transform 0.4s ease-in-out;
+      transform-origin: center;
+      &.open {
+        transform: rotate(-180deg);
+      }
+    }
+  }
+}

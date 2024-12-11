@@ -1,0 +1,20 @@
+@use "../variables/design.scss";
+.rating {
+  display: flex;
+  gap: 4px;
+  @media (max-width: 768px) {
+    gap: 2px;
+  }
+
+  i {
+    font-size: 24px;
+    color: design.$primary-color;
+    @media (max-width: 768px) {
+      font-size: 13px;
+    }
+  }
+
+  .fa-regular.fa-star {
+    color: design.$gray-light;
+  }
+}
