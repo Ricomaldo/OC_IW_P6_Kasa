@@ -11,7 +11,7 @@ const Card = ({ id, cover, title }) => {
   return (
     <div
       className="card"
-      style={{ backgroundImage: `url(${cover})`, cursor: "pointer" }}
+      style={{ backgroundImage: `url(${cover})` }}
       onClick={handleClick}
     >
       <h2>{title}</h2>

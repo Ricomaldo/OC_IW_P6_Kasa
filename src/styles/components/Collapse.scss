@@ -1,11 +1,10 @@
 @use "../variables/design.scss";
-@use "../animations/Collapse.scss";
 
 .collapse {
   width: 100%;
 
   overflow: hidden;
-  .collapse-title {
+  &_title {
     background-color: design.$primary-color;
     color: design.$white;
     display: flex;
@@ -41,11 +40,14 @@
       }
     }
   }
-  .collapse-content {
-    color: design.$black;
+  &_content-container {
     background-color: design.$bg-color-2;
-    padding: 30px 24px 0 20px;
+    padding: 0px 24px 0px 20px;
+  }
+  &_content-text {
+    color: design.$black;
     font-size: 18px;
+
     @media (max-width: 768px) {
       font-size: 12px;
     }

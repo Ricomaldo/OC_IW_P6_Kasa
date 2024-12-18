@@ -20,6 +20,7 @@ const Home = () => {
             id={logement.id}
             cover={logement.cover}
             title={logement.title}
+            className="card"
           />
         ))}
       </div>

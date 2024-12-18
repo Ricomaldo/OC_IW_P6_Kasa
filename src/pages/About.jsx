@@ -30,7 +30,7 @@ const About = () => {
 
   return (
     <div className="about">
-      <Banner image={backgroundImage} title="" shadowClass="soft-shadow" />
+      <Banner image={backgroundImage} shadowClass="soft-shadow" />
       <div className="about__collapses">
         {aboutData.map((value) => (
           <Collapse
